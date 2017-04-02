@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+dropdb   postgres_101
+createdb postgres_101
+
+psql -d postgres_101 -f bin/create_master.sql
